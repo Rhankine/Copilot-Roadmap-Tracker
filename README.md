@@ -17,7 +17,7 @@ A Power Automate solution that posts **new and updated items** from the [Microso
 
 ## 🚀 Installation
 
-1. **Download the solution zip file** from the [GitHub repository](https://github.com/YOUR-USERNAME/copilot-roadmap-notifier) under `/solution/copilot-roadmap-notifier.zip`
+1. **Download the solution zip file** from the [GitHub repository](https://github.com/YOUR-USERNAME/copilot-roadmap-tracker) under `/CopilotRoadmapTracker_1_0_0_1.zip`
 2. Go to [Power Automate](https://make.powerautomate.com/)
 3. Navigate to **Solutions > Import**
 4. Upload the downloaded zip file
