@@ -1,4 +1,4 @@
-# 🧭 Microsoft 365 Copilot Roadmap Notifier
+# 🧭 Microsoft 365 Copilot Roadmap Tracker
 
 A PowerAutomate solution that posts **new and updated items** from the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) to a Microsoft Teams channel using Adaptive Cards. Ideal for tracking Copilot and modern workplace developments.
 
