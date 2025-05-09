@@ -1,6 +1,6 @@
 # 🧭 Microsoft 365 Copilot Roadmap Notifier
 
-A Power Automate solution that posts **new and updated items** from the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) to a Microsoft Teams channel using Adaptive Cards. Ideal for tracking Copilot and modern workplace developments.
+A PowerAutomate solution that posts **new and updated items** from the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) to a Microsoft Teams channel using Adaptive Cards. Ideal for tracking Copilot and modern workplace developments.
 
 ---
 
@@ -17,8 +17,8 @@ A Power Automate solution that posts **new and updated items** from the [Microso
 
 ## 🚀 Installation
 
-1. **Download the solution zip file** from the [GitHub repository](https://github.com/YOUR-USERNAME/copilot-roadmap-tracker) under `/CopilotRoadmapTracker_1_0_0_1.zip`
-2. Go to [Power Automate](https://make.powerautomate.com/)
+1. **Download the solution zip file** from the [GitHub repository](https://github.com/Rhankine/copilot-roadmap-tracker) under `/CopilotRoadmapTracker_1_0_0_1.zip`
+2. Go to [PowerAutomate](https://make.powerautomate.com/)
 3. Navigate to **Solutions > Import**
 4. Upload the downloaded zip file
 5. During import:
