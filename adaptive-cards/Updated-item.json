@@ -1,0 +1,78 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "🔄 **Updated Microsoft 365 Roadmap Item** 🔔",
+          "weight": "Bolder",
+          "size": "Medium",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "@{triggerOutputs()?['body/title']}",
+          "weight": "Bolder",
+          "size": "Medium",
+          "spacing": "Small",
+          "wrap": true
+        },
+        {
+          "type": "Container",
+          "style": "emphasis",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "📌 Status: @{outputs('Rollout_Status')}",
+              "weight": "Bolder",
+              "wrap": true,
+              "spacing": "Small",
+              "horizontalAlignment": "Center"
+            }
+          ],
+          "spacing": "Medium"
+        },
+        {
+          "type": "TextBlock",
+          "text": "@{trim(substring(triggerOutputs()?['body/summary'], 0, indexOf(triggerOutputs()?['body/summary'], '<br>GA date:')))}",
+          "spacing": "Small",
+          "wrap": true
+        },
+        {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "🚀 GA Date:",
+              "value": "@{substring(triggerOutputs()?['body/summary'], add(indexOf(triggerOutputs()?['body/summary'], 'GA date: '), 9))}"
+            },
+            {
+              "title": "🗓️ Updated On:",
+              "value": "@{formatDateTime(triggerOutputs()?['body/updatedOn'], 'yyyy-MM-dd')}"
+            }
+          ],
+          "spacing": "Medium"
+        },
+        {
+          "type": "TextBlock",
+          "text": "🏷️ Categories: @{outputs('Categories_list')}",
+          "spacing": "Small",
+          "wrap": true,
+          "weight": "Lighter",
+          "size": "Small",
+          "color": "Accent"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "🔗 View on Roadmap",
+      "url": "@{triggerOutputs()?['body/primaryLink']}"
+    }
+  ]
+}
